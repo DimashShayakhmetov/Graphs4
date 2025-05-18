@@ -47,25 +47,25 @@ public class Vertex<T> {
         return weight;
     }
 
-    public T getData() {
-        return data;
-    }
-
     public void setData(T data) {
         this.data = data;
     }
 
-    public Map<T, Double> getAdjacentVertices() {
-        return adjacentVertices;
+    public T getData() {
+        return data;
     }
 
     public void addAdjacentVertex(T vertex, Double weight) {
         adjacentVertices.put(vertex, weight);
     }
 
+    public Map<T, Double> getAdjacentVertices() {
+        return adjacentVertices;
+    }
+
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true; // references compared
+        if (this == o) return true;
 
         if (o == null || getClass() != o.getClass()) return false;
 

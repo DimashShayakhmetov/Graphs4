@@ -28,7 +28,7 @@ public class DijkstraSearch<T> extends Search<T> {
 
                 if (getShortestDistance(neighbor) > newDistance) {
                     distances.put(neighbor, newDistance);
-                    edgeTo.put(neighbor, currentNode); // inverted adding
+                    edgeTo.put(neighbor, currentNode);
                     unsettledNodes.add(neighbor);
                 }
             }
