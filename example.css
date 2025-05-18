@@ -1,0 +1,32 @@
+.flex-programs {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+
+  .program {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  /* Grid example */
+  .grid-nutrition {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #e9f7ef;
+  }
+
+  .meal {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
